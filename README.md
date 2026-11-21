@@ -24,10 +24,12 @@ bằng chính tài khoản của bạn. Gửi bằng HTTP nên **không đá tab
 
 ---
 
-## 📦 Tải về
+## 📦 Trong repo có gì
 
-- **File skill cài nhanh:** [`zalo-care.skill`](zalo-care.skill) — mở trong Claude → **Save skill**.
-- **Mã nguồn skill:** thư mục [`zalo-care/`](zalo-care/) (SKILL.md + scripts + tài liệu).
+- 🧩 **Extension lấy khóa:** thư mục [`extension/`](extension/) — addon Chrome "Zalo – Xuất khóa",
+  đọc `credentials.json` từ tab Zalo Web đang đăng nhập.
+- 🤖 **Skill gửi tin:** [`zalo-care.skill`](zalo-care.skill) (cài nhanh vào Claude) + mã nguồn ở
+  thư mục [`zalo-care/`](zalo-care/) (SKILL.md + scripts + tài liệu).
 
 ---
 
@@ -68,8 +70,9 @@ Bản này **cố ý rút gọn** để an toàn tối đa cho tài khoản củ
 
 ## 🚀 Cài nhanh
 
-1. **Lấy khóa:** dùng extension Chrome **"Zalo – Xuất khóa"** trên tab `chat.zalo.me` đang
-   đăng nhập → bấm **Tải credentials.json**.
+1. **Lấy khóa:** cài extension trong thư mục **[`extension/`](extension/)** (xem
+   [hướng dẫn](extension/README.md)) → mở tab `chat.zalo.me` đã đăng nhập → popup →
+   **Tải credentials.json**.
 2. Đặt `credentials.json` vào thư mục **`zalo-care/scripts/`**.
 3. Trong `zalo-care/scripts/`:
    ```bash

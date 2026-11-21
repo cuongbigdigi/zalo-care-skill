@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Zalo – Xuất khóa</title>
+<style>
+  :root { --bg:#fff; --fg:#1f2328; --muted:#656d76; --line:#d0d7de; --card:#f6f8fa; --accent:#0068ff; --ok:#1a7f37; --bad:#cf222e; --warn:#9a6700; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0d1117; --fg:#e6edf3; --muted:#8d96a0; --line:#30363d; --card:#161b22; --accent:#4c8dff; --ok:#3fb950; --bad:#f85149; --warn:#d29922; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; width:340px; background:var(--bg); color:var(--fg); font:13px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  header { display:flex; align-items:center; justify-content:space-between; padding:10px 12px; border-bottom:1px solid var(--line); }
+  h1 { font-size:14px; margin:0; }
+  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:6px; background:var(--muted); }
+  .dot.ready { background:var(--ok); } .dot.open { background:var(--warn); }
+  section { padding:12px; }
+  h2 { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); margin:0 0 6px; }
+  .muted { color:var(--muted); }
+  .row { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+  button { padding:6px 12px; border:1px solid var(--line); border-radius:6px; background:var(--card); color:var(--fg); font:inherit; cursor:pointer; }
+  button.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .warn { color:var(--warn); font-size:12px; margin:10px 0 0; }
+  #toast { font-size:12px; color:var(--ok); min-height:16px; margin-top:6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Zalo – Xuất khóa</h1>
+  <span id="status"><span class="dot"></span>…</span>
+</header>
+
+<section>
+  <h2>Credentials cho zca-js</h2>
+  <div id="device" class="muted"></div>
+  <div class="row">
+    <button class="primary" id="download">Tải credentials.json</button>
+    <button id="copy">Copy JSON</button>
+  </div>
+  <p class="warn">Credentials = quyền vào tài khoản. Không chia sẻ, không commit lên git, không gửi qua chat/email.</p>
+  <div id="toast"></div>
+</section>
+
+<script src="popup.js"></script>
+</body>
+</html>

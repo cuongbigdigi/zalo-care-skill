@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Zalo – Xuất khóa",
+    "version": "0.2.0",
+    "description": "Xuất credentials.json (cookie + imei + userAgent) từ tab chat.zalo.me đang đăng nhập để dùng với zca-js. Chỉ đọc, không mở kết nối thứ hai.",
+    "permissions": ["storage", "cookies"],
+    "host_permissions": ["https://*.zalo.me/*"],
+    "background": { "service_worker": "background.js" },
+    "action": { "default_popup": "popup.html", "default_title": "Zalo – Xuất khóa" },
+    "content_scripts": [
+        {
+            "matches": ["https://chat.zalo.me/*"],
+            "js": ["bridge.js"],
+            "run_at": "document_idle",
+            "all_frames": false
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "zalo-care-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Scripts chăm sóc khách hàng qua Zalo bằng zca-js: nhắn tin + xem thông tin (an toàn, chỉ đọc/gửi).",
+  "dependencies": {
+    "zca-js": "^2.2.0"
+  }
+}

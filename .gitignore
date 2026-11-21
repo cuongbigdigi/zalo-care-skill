@@ -1,0 +1,10 @@
+# KHÔNG commit khóa đăng nhập Zalo (toàn quyền tài khoản)
+credentials.json
+**/credentials.json
+
+# Node
+node_modules/
+**/node_modules/
+
+# OS
+.DS_Store

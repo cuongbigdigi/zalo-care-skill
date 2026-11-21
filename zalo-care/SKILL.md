@@ -78,4 +78,9 @@ Tham chiếu thêm hàm an toàn của zca-js: `references/zca-js-api.md`.
   bất kỳ thiệt hại nào. **Người dùng tự chịu trách nhiệm** về nội dung gửi đi và
   việc tuân thủ quy định của Zalo & pháp luật.
 
+## 📢 Cập nhật skill mới
+
+Nhận bản cập nhật & skill mới nhất từ tác giả qua nhóm Zalo:
+<https://zalo.me/g/37yoic8thaeho75yicnb>
+
 [zca-js]: https://github.com/rfs-adreno/zca-js
